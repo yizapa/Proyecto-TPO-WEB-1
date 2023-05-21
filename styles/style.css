@@ -6,7 +6,7 @@ ul{
     /* Probar funcionalidad y estetica
     background: rgb(0,99,11);
     background: radial-gradient(circle, rgba(0,99,11,1) 20%, rgba(0,12,132,1) 86%); */
-    background-image: url(/assets/img/fondo-tl-002.jpg);
+    background-image: url(/Proyecto-TPO-WEB-1/assets/img/fondo-tl-002.jpg);
     list-style-type: none;
     margin: 0;
     padding: 0;
