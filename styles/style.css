@@ -6,7 +6,7 @@ ul{
     /* Probar funcionalidad y estetica
     background: rgb(0,99,11);
     background: radial-gradient(circle, rgba(0,99,11,1) 20%, rgba(0,12,132,1) 86%); */
-    /* background-image: url(/assets/img/fondo-tl-002.jpg); */
+    /*background-image: url(/assets/img/fondo-tl-002.jpg);*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -14,18 +14,20 @@ ul{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    /* background-color: darkgreen; */
-    }
+    /*background-color: darkgreen;*/
+        
+}
 
 li{
     float: left;
     border-right: 1px solid transparent;
-    }
+    
+}
 
 /* li:last-child{
     border-right: none;
     border-left: 1px solid transparent;
-    } */
+} */
 
 li a{
     display: block;
@@ -33,16 +35,18 @@ li a{
     text-align: center;
     padding: 10px 15px;
     text-decoration: none;
-    }   
+    
+}
 
 /* .active{
     background-color: darkblue;
-    } */
-
+    
+}
+ */
 li a:hover:not(.active){
     background-color: transparent;
     opacity: 0.7;
-    }
+}
 
 h1 {
     color: white;
@@ -50,25 +54,35 @@ h1 {
     font-size: 40px;
     text-align: center;
     margin-top: 40px;
-    }   
+}
 
 p{
     color: white;
-    }
+}
 
-/* contenido */
 .content{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: space-between;
     background-image: url(/assets/img/fibra.jpg);
     background-size: cover;
     background-attachment: fixed;
     color: white;
-    }
+    
+
+}
+
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    
+}
 
 
+.parrafos{
+    
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 footer{
     position: fixed;
@@ -77,7 +91,4 @@ footer{
     width: 100%;
     padding: 10px 0;
     text-align: center;
-    }
-
-
-    
+}
