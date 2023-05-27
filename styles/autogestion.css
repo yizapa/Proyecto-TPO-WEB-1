@@ -1,13 +1,14 @@
 */* Estilos para el menú de navegación */
 *{
     font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
 }
 
 ul {
-    /* Probar funcionalidad y estetica
-    background: rgb(0,99,11);
-    background: radial-gradient(circle, rgba(0,99,11,1) 20%, rgba(0,12,132,1) 86%); */ 
-    /*background-image: url(/assets/img/fibra.jpg);*/
+   
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -15,7 +16,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    /*background-color: rgb(14, 19, 14);*/
+    
     
 }
 
@@ -52,15 +53,20 @@ li a:hover:not(.active){
     color: white;
     }
 
+/* Estilo formulario */
+form {
+    display: flex;
+    margin: 20px;
+}
+
 /* Estilo botón */
-.button {
-    background-color: transparent;
+button {
+    background-color: gray;
     border: none;
     color: white;
     margin: 3px;
     padding: 5px;
     text-align: bottom;
-    text-decoration: none;
     display: inline-block;
     font-size: 16px;
     resize: none;
@@ -68,8 +74,10 @@ li a:hover:not(.active){
 }
 
 .button:hover {
-    background-color: transparent;
-    color: black;
+    background-color: white;
+    filter:invert();
+    font-size: 20px;
+    color: white;
 }
 
 /* Estilos para el contenido principal */
@@ -86,12 +94,13 @@ p {
     line-height: 1.5;
     margin: 20px;
     text-align: justify;
-    background-color: white;
-    color:black;
+    background-color: transparent;
+    color: white;
     opacity: 0.6;
     border-radius: 5px;
     word-wrap: break-word;
 }
+
 .formulario{
     display:flex;
     flex-direction: column;
@@ -101,17 +110,26 @@ p {
     align-items: flex-start;
     padding: 5px;
     margin: 10px;
-    background-color: white;
+    background-color: transparent;
     opacity: 0.6;
     border-radius: 5px;
-    color: black ;
+    color: white ;
     word-wrap: break-word;
     }
+
 .casilla{
     display: flex;
     flex-direction: row;
+    margin-top: 5px;
     justify-content: space-between;
-        }
+    background-color: gray;
+    }
+
+#text {
+    display: inline-flex;
+    resize: none;
+    
+}
 
 footer{
     position: fixed;

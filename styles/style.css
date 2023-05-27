@@ -3,10 +3,6 @@
  }
 
 ul{
-    /* Probar funcionalidad y estetica
-    background: rgb(0,99,11);
-    background: radial-gradient(circle, rgba(0,99,11,1) 20%, rgba(0,12,132,1) 86%); */
-    /*background-image: url(/assets/img/fondo-tl-002.jpg);*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -14,20 +10,12 @@ ul{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    /*background-color: darkgreen;*/
-        
 }
 
 li{
     float: left;
     border-right: 1px solid transparent;
-    
 }
-
-/* li:last-child{
-    border-right: none;
-    border-left: 1px solid transparent;
-} */
 
 li a{
     display: block;
@@ -35,14 +23,9 @@ li a{
     text-align: center;
     padding: 10px 15px;
     text-decoration: none;
-    
 }
 
-/* .active{
-    background-color: darkblue;
-    
-}
- */
+
 li a:hover:not(.active){
     background-color: transparent;
     opacity: 0.7;
@@ -65,8 +48,6 @@ p{
     background-size: cover;
     background-attachment: fixed;
     color: white;
-    
-
 }
 
 .contenedor{
@@ -78,17 +59,21 @@ p{
     display: grid;
     grid-template-columns: 3fr;
     gap: 20px;
-    
+}
+
+.contenedor section p {
+    font-size: 16px; /* Ajusta el tamaño de fuente según tus preferencias */
+    text-align: justify;
+    line-height: 1.6;
 }
 
 .cont-images {
     /* Grid */
     display: grid;
     grid-template-columns: 3fr 3fr;
-    gap: 20px;
-    
-
+    gap: 45px;
 }
+
 .card {
     border-radius: 10px;
     min-height: 200px;
@@ -98,12 +83,16 @@ p{
     overflow: hidden;
     background-size: cover;
     background-position: center center;
-    
+    box-shadow: 10px 5px 5px black;
+    filter: contrast(0.9);
+}
+
+.card:hover {
+    filter: contrast(1.2);
 }
 
 .card .textos {
     height: 100%;
-
     /* Flexbox */
     display:  flex;
     flex-direction: column;
@@ -111,14 +100,13 @@ p{
 }
 
 .parrafos{
-    
     padding-top: 2rem;
     padding-bottom: 2rem;
     font-family: Arial, Helvetica, sans-serif;
 }
 
 footer{
-    position: fixed;
+    position: grid;
     bottom: 0;
     left: 0;
     width: 100%;

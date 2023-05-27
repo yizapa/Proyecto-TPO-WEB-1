@@ -4,25 +4,19 @@
 
 /* Estilos para el menú de navegación */
 ul {
-    /* Probar funcionalidad y estetica
-    background: rgb(0,99,11);
-    background: radial-gradient(circle, rgba(0,99,11,1) 20%, rgba(0,12,132,1) 86%); */
-    /* background-image: url(/assets/img/fondo-tl-002.jpg); */
+    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    /* background-color: darkgreen; */
-    
+    overflow: hidden;    
 }
 
 li {
     float: left;
     border-right: 1px solid transparent;
-   
 }
 
 li a {
@@ -39,7 +33,6 @@ li a:hover:not(.active){
     opacity: 0.7;
 }
 
-
 /* Contenido */
 .content{
     display: flex;
@@ -50,7 +43,7 @@ li a:hover:not(.active){
     background-size: cover;
     background-attachment: fixed;
     color: white;
-    }
+}
 
 /* Estilos para el contenido principal */
 h1 {
@@ -60,7 +53,16 @@ h1 {
     text-align: center;
     margin-top: 40px;
 }
+
+.container {
+    margin: 2rem;    
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.6;
+}
+  
 footer{
+    
     position: fixed;
     bottom: 0;
     left: 0;

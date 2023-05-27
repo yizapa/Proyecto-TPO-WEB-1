@@ -5,7 +5,6 @@
 
 /* Estilos para el menú de navegación */
 ul {
-  
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -13,14 +12,11 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    /* background-color: darkgreen; */
-    
 }
 
 li {
     float: left;
     border-right: 1px solid transparent;
-   
 }
 
 li a {
@@ -47,14 +43,14 @@ li a:hover:not(.active){
     background-size: cover;
     background-attachment: fixed;
     color: white;
-    }
+}
 
 h1 {
     color: white;
     text-shadow: 1px 1px 2px black;
     font-size: 40px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 p {
@@ -64,12 +60,12 @@ p {
 }
 
 section {
-    
     object-position: center;
     text-align: justify;
     padding: 1rem;
     margin: 1rem;
-    margin-right: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
     background: gray;
     opacity: 0.9;
     box-shadow: 0 3px 10px 0 rgba(#000, 0.1);
@@ -77,28 +73,23 @@ section {
 }
 
 h2 {
-    
-    display: flex;
     color: white;
     text-align: center;
+    display: flex;
     background-color: black;
     margin-left: 1rem;
     margin-bottom: 1rem;
     font-style: italic;
     font-weight: bold;
-    
-    
 }
   
 scroll-container {
     
-    padding-left: 2rem;
     display: flex;
+    padding-left: 2rem;
     overflow-x: scroll;
     scroll-padding: 5rem; 
 }
-
-
 
 scroll-container img:not(:hover) {
     
@@ -109,10 +100,7 @@ scroll-container img:not(:hover) {
     filter: grayscale();
     transform: skew(-15.5deg);
     transition: all 5s ease-in-out;
-    
-    
 }
-
 
 scroll-container img:hover {
     
@@ -122,13 +110,9 @@ scroll-container img:hover {
     opacity: 1;
     transform: skew(0.5deg);
     transition: all 2s ease-in-out;
-    flex: 0 0 150px;
     width: 225px;
     height: 225px;
- 
-    
 }  
-
 
 footer{
     position: relative;
