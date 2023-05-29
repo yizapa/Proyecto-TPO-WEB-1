@@ -99,12 +99,6 @@ p{
     justify-content: space-between;
 }
 
-.parrafos{
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 footer{
     position: grid;
     bottom: 0;
