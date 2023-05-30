@@ -16,4 +16,5 @@ function onformSubmit(event){
         return;
     }
     console.log(`Nombre: ${name}, correo electronico: ${email}, mensaje: ${text}`);
+    alert('¡Has enviado el correo gracias por comunicarte!')
 }
