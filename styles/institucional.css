@@ -55,12 +55,24 @@ h1 {
 }
 
 .container {
-    margin: 2rem;    
+    display: grid;
+    grid-template-columns: 2fr 6fr 1fr;
+    gap: 45px;
+    margin-top: 2rem;   
+    margin-left: 5rem; 
     text-align: justify;
     font-size: 16px;
     line-height: 1.6;
     padding: 20px;
     justify-content: center;
+}
+
+.corpo {
+    margin-left: 5rem;
+    padding: 2rem;
+    width: 450px;
+    height: 650px;
+    
 }
   
 footer{

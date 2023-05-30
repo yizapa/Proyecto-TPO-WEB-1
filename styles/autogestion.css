@@ -126,6 +126,7 @@ form button {
 }
 
 form button:hover {
+        
         font-weight: bold;
         filter: opacity(0.7);
 }
