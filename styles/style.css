@@ -56,6 +56,11 @@ h1 {
     margin-top: 40px;
 }
 
+h2 {
+    text-align: center;
+    line-height: 2;
+}
+
 p{
     color: white;
 }
@@ -121,36 +126,42 @@ p{
     margin: auto;
     width: 100%;
     max-width: 800px;
-    padding: 10px;
     
 }
-.mapa {
+
+.mapa:not(.mapa:hover) {
     display: flex;
     margin: auto;
     width: 100%;
-    border: 10px;
-    border-color: yellow;
+    border: none;
     max-width: 400px;
-    padding: 5px;
     flex-direction: column;
-    opacity: 0.8;
+    opacity: 0.4;
+    filter: grayscale();
+}
 
-.datos {
-    
-    display: flex;
-    flex-wrap: wrap;
-    margin: 5px;
-    font-size: 9px;
+.mapa:hover {
+    margin: auto;
+    opacity: 1;
+}
+
+div span {
+    margin: 10px;
     width: 100%;
-    max-width: 300px;
-    padding: 2px;
-    flex-direction: row;
-    white-space: pre-wrap;
-    
+    padding: auto;
+    line-height: 4rem;
+    opacity: 1;
     
 }
 
+#datos {
+    background-color: rgba(128, 128, 128, 0.4);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 2px;
 }
+
+
 footer{
     position: grid;
     bottom: 0;
@@ -158,4 +169,5 @@ footer{
     width: 100%;
     padding: 10px 0;
     text-align: center;
+    margin-top: 2rem;
 }

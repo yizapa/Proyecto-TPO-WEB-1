@@ -2,11 +2,11 @@
     font-family: 'Ubuntu', sans-serif;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     
 }
 
-ul {
+nav ul {
    
     display: flex;
     flex-direction: row;
@@ -20,13 +20,13 @@ ul {
 }
 
 
-li {
+nav ul li {
     float: left;
     border-right: 1px solid transparent;
 
 }
 
-li a {
+nav ul li a {
     display: block;
     color: white;
     text-align: center;
@@ -79,82 +79,91 @@ h1 {
     margin-top: 40px;
 }
 
-section form {
-    display: flex;
-    margin: auto;
-    width: 50%;
-    border: 3px solid yellow;
-    padding: 10px;
+p {    
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 2px gold;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    margin: 0;
+    padding: 0;
+    
+    /* gap: 5px; */
+    
 }
 
 section img {
     display: flex;
-    margin: auto;
-    width: 30%;
-    padding: 10px;
+    width: 120%;
+    max-width: 550px;
+    padding: 0;
+    object-position: top center;
+    translate: 30rem;
+    z-index: -1;
+    margin-top: -30px;
+    opacity: 0.5;
+    
 }
 
-p {
-    font-size: 18px;
-    line-height: 1.5;
-    margin: 20px;
-    text-align: center;
-    background-color: transparent;
-    color: white;
-    opacity: 0.6;
-    border-radius: 5px;
-    word-wrap: break-word;
+section form {
+    display: flex;
+    margin: auto;
+    align-items: right;
+    text-align-last: left;
+    width: 100%;
+    padding: 1px;
+    
 }
 
 /* Estilo formulario */
 .formulario {
-    
-    display: flexbox;
-    text-align: center;
-    /* background: gray; */
+    margin: 0;
     color: white;
-    flex-direction: column;
-    padding: 1vw 2vw;
+    flex-direction: row;
     width: 100%;
     max-width: 600px;
-    border-radius: 10px;
+    list-style-type: none;
 }
 
 form input, form textarea {
+    
     border: 0;
     margin: 10px 0;
     padding: 10px;
     outline: none;
     background: white;
     font-size: 16px;
-    
+    border: 3px solid gold;
 }
 
 form button {
     padding: 15px;
-    background: rgb(255, 238, 2);
+    background: gold;
     color: black;
     font-size: 20px;
     border: 0;
     outline: none;
     cursor: pointer;
-    width: 150px;
-    margin:  20px auto 0;
+    width: 130px;
+    text-align-last: center;
     border-radius: 30px;
 }
 
 form button:hover {
         
-        font-weight: bold;
-        filter: opacity(0.7);
+    font-weight: bold;
+    filter: opacity(0.7);
 }
 
 .casilla{
     display: flex;
     margin: auto;
     width: 100%;
-    padding: 10px;
-        
 }
 
 form div li label textarea, input[type=email], form div li label input[type=text]{
@@ -163,15 +172,15 @@ form div li label textarea, input[type=email], form div li label input[type=text
     background-color: rgba(170, 166, 166, 0.3);
     box-shadow: 0 3px 10px 0 rgba(#000, 0.1);
     resize: none;
-    
 }
 
 textarea:hover, input[type=email]:hover, form div li label input[type=text]:hover{
-    color: yellow;
+    color: gold;
+    background-color: rgba(86, 84, 84, 0.666);
 }
 
 footer{
-    position: fixed;
+    position: grid;
     bottom: 0;
     left: 0;
     width: 100%;

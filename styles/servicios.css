@@ -83,10 +83,13 @@ section {
     margin: 1rem;
     margin-left: 3rem;
     margin-right: 2rem;
-    background: rgba(170, 166, 166, 0.8);
+    background: rgba(170, 166, 166, 0.4);
     opacity: 0.9;
     box-shadow: 0 3px 10px 0 rgba(#000, 0.1);
     border-radius: 25px;
+    transform: skew(-15.5deg);
+    outline: gold;
+    outline-width: 3px;
 }
 
 h2 {
@@ -100,9 +103,9 @@ h2 {
     font-weight: bold;
     border-radius: 30px;
     padding: 5px;
-    text-shadow: 1px 2px 2px yellow;
+    text-shadow: 1px 2px 2px gold;
 }
-  
+
 scroll-container {
     
     display: flex;
@@ -118,7 +121,7 @@ scroll-container img:not(:hover) {
     width: 150px;
     height: 150px;
     filter: grayscale();
-    transform: skew(-15.5deg);
+    transform: skew(-2.5deg);
     transition: all 5s ease-in-out;
 }
 
@@ -128,7 +131,7 @@ scroll-container img:hover {
     width: 225px;
     height: 225px;
     opacity: 1;
-    transform: skew(0.5deg);
+    transform: skew(15.5deg);
     transition: all 2s ease-in-out;
     width: 225px;
     height: 225px;

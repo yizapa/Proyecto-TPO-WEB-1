@@ -72,28 +72,45 @@ h1 {
 
 .container {
     display: grid;
-    grid-template-columns: 2fr 6fr 1fr;
-    gap: 45px;
-    margin-top: 2rem;   
-    margin-left: 5rem; 
+    grid-template-columns: 3fr 4fr;
+    gap: 25px;
+    /* margin-top: 2rem; */  
+    /* margin-left: 3rem; */
+    /* margin-right: 5px; */
+    margin: 0;
     text-align: justify;
     font-size: 16px;
     line-height: 1.6;
-    padding: 20px;
+    padding-right: 10px;
     justify-content: center;
 }
 
 .corpo {
-    margin-left: 5rem;
-    padding: 2rem;
-    width: 450px;
-    height: 650px;
+    display: grid;
+    margin: 0;
+    margin-left: 10rem;
+    padding-left: 5rem;
+    padding: 0;
+    width: 90%;
+    height: auto;
+    max-width: 450px;
+    max-height: 650px;
+    
+    
+}
+
+section div p {
+    display: grid;
+    margin-right: 10rem;
+    color: white;
+    text-shadow: 1px 2px 2px gray;
+    
     
 }
   
 footer{
     
-    position: fixed;
+    position: grid;
     bottom: 0;
     left: 0;
     width: 100%;
