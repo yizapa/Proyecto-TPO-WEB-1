@@ -152,6 +152,7 @@ form button {
     width: 130px;
     text-align-last: center;
     border-radius: 30px;
+    margin-top: 20px;
 }
 
 form button:hover {
